@@ -20,6 +20,12 @@ Post request json file structure
 const registerUser =async (req, res) => {
 
     //Write you code here
+    const {name, email, password} =req.body
+    const users=new users
+    name=name,
+    email=email,
+    password=password
+    
 
 }
 
