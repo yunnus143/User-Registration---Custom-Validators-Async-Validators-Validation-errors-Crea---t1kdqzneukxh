@@ -21,17 +21,20 @@ const registerUser =async (req, res) => {
 
     //Write you code here
     try{
-    const { name, email, password } =req.body
+    const { name, email, password } = req.body
     
     const newUser = new users({
     name: name,
     email: email,
     password: password
     })
+    
     await newUser.save()
+        
         res.status(200).send(newUser._id)
-    } catch(error){
-        res.staus(404).send(error.massage)
+        
+    } catch (error) {
+        res.status(404).send(error.massage)
     }
 }
 
