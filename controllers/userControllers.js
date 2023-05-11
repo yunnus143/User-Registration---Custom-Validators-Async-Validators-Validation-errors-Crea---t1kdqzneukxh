@@ -1,5 +1,5 @@
 const users   =require("../models/user.js");
-const bcrypt = require('bcrypt');
+
 
 /*
 Post request json file structure
